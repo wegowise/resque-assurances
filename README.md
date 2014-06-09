@@ -31,8 +31,8 @@ class MyWorker
   @queue = :my_work
 end
 
-Resque.enqueue(MyWorker, 42)
-Resque.enqueue(MyWorker, 42) # This will do nothing.
+MyWorker.enqueue_once(42)
+MyWorker.enqueue_once(42) # This will do nothing.
 ```
 
 ## Contributing
