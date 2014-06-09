@@ -1,5 +1,6 @@
 require 'resque'
 require_relative 'resque-assurances/uniqueness'
+require_relative 'resque-assurances/persistence'
 require_relative 'resque-assurances/job_key'
 
 module Resque
