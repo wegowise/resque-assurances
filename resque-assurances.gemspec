@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
   s.description = 'Collection of resque plugins that individually provide specific assurances about how resque workers will behave.'
 
   s.files = `git ls-files`.split("\n")
-  s.test_files = `git ls-files -- spec/*`.split("n")
+  s.test_files = `git ls-files -- spec/*`.split("\n")
 
   s.add_runtime_dependency 'resque', '>= 1.0', '< 2'
   s.add_development_dependency 'rspec', '~> 3.0'
