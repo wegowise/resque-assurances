@@ -4,7 +4,7 @@ require_relative 'resque-assurances/job_key'
 
 module Resque
   module Assurances
-    REDIS_UNIQUENESS_KEY = 'resque:assurances:jobs'
+    REDIS_UNIQUENESS_KEY = 'resque:assurances:uniqueness'
 
     class << self
       def reset!
